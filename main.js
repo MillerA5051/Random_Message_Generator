@@ -1,3 +1,4 @@
+const returnRandomStr =()=>{
 const randSentences = [
     "I've got soul but I'm not a soldier."
     ,"Have you ever stopped to watch a bluebird drop from a tree, and take to the air? Me Neither Have you ever stopped to finish out a rhyme but the right words just weren't there? Meat Cleaver"
@@ -84,8 +85,7 @@ const randSentences = [
     ,'“The future is a shadow of the past that dances in the light of now.” – Temporal Dreamer'
     ,'“In the void, even echoes forget their origins.” – Abyss Philosopher'
 ]
-const returnRandomStr =(array)=>{
-    let int = Math.floor(Math.random()*array.length);
-    return array[int];
+    let int = Math.floor(Math.random()*randSentences.length);
+    return randSentences[int];
 }
-console.log(returnRandomStr(randSentences));
+console.log(returnRandomStr());
